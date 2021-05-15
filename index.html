@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalho Web 2</title>
+    <link rel="stylesheet" href="../unime-trabalhoWeb2/css/style.css">
+    <script type="text/javascript" src="../unime-trabalhoWeb2/js/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript">
+        function list(){
+            $.ajax({
+                url: 'https://pizzaria.roxo.dev.br/',
+                method: 'get',
+                success(data) {
+                    console.log(data);
+                    $('.sabores').html(('<tr><td>Sabor</td><td>Valor</td></tr>'))
+                    data.forEach(function(item) {
+                        var valorBR = JSON.stringify(item.valor);                   
+                        valorBR = valorBR.slice(1, length-1)
+                        valorBR = valorBR.replaceAll('.',',');
+
+                        $('.sabores').append('<tr><td>' + item.nome + '</td><td>' + `R$ ${valorBR}` + '</td></tr>')
+                    });
+            }
+        });
+        }
+        list();
+
+    </script>
+</head>
+<body>
+    <div id="mtit">
+        <img src="../unime-trabalhoWeb2/img/logo.png" class="logo titulo"><h1 class="titulo">Pizza do Dev</h1>
+    </div><br>
+
+    <div class="scrollsab conteudo">
+        <img src="../unime-trabalhoWeb2/img/pao.jpg" id="pimg">
+        <p id="pnm">Alho e Óleo</p><br><br>
+        <img src="../unime-trabalhoWeb2/img/pb.jpg" id="pimg">
+        <p id="pnm">Bacon</p><br><br>
+        <img src="../unime-trabalhoWeb2/img/pba.jpg" id="pimg">
+        <p id="pnm">Baiana</p><br><br>
+        <img src="../unime-trabalhoWeb2/img/pca.jpg" id="pimg">
+        <p id="pnm">Calabresa</p><br><br>
+        <img src="../unime-trabalhoWeb2/img/pdefault.jpg" id="pimg">
+        <p id="pnm">Camarão</p><br><br>
+        <img src="../unime-trabalhoWeb2/img/pfc.jpg" id="pimg">
+        <p id="pnm">Frango com Catupiry</p><br><br>
+        <img src="../unime-trabalhoWeb2/img/pma.jpg" id="pimg">
+        <p id="pnm">Maguerita</p><br><br>
+        <img src="../unime-trabalhoWeb2/img/pmi.png" id="pimg">
+        <p id="pnm">Milho Verde</p><br><br>
+        <img src="../unime-trabalhoWeb2/img/pmu.jpg" id="pimg">
+        <p id="pnm">Mussarela</p><br><br>
+        <img src="../unime-trabalhoWeb2/img/ppe.jpg" id="pimg">
+        <p id="pnm">Peperoni</p><br><br>
+        <img src="../unime-trabalhoWeb2/img/ppo.jpg" id="pimg">
+        <p id="pnm">Portuguesa</p><br><br>
+        <img src="../unime-trabalhoWeb2/img/pqq.jpg" id="pimg">
+        <p id="pnm">Quatro Queijos</p>
+    </div>
+
+    <table class="sabores conteudo" border="1"></table>
+
+    
+    
+</body>
+</html>

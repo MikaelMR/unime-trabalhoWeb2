@@ -1,0 +1,55 @@
+* {
+    margin: 1px;
+}
+.titulo {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 2em;
+    padding: 20px;
+}
+.logo {
+    width: 103px;
+    height: 103px;
+    padding-left: 80px;
+}
+#mtit {
+    background-color: #CD5C5C;
+    border: 1px solid black;
+}
+.conteudo {
+    display: inline-block;
+    vertical-align: top;
+}
+.sabores {
+    border: 1px solid black;
+    border-radius: 8px;
+    background-color: #FFA07A;
+    font-size: 1.5em;
+    padding: 10px;
+}
+.scrollsab {
+    border: 1px solid black;
+    border-radius: 8px;
+    background-color: #FFA07A;
+    padding: 50px;
+    height: 351px;
+    width: 350px;
+    overflow: auto;
+}
+#pimg {
+    border: 1px solid black;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+}
+#pnm {
+    border: 1px solid black;
+    border-radius: 8px;
+    background-color: #DE3163;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+    padding: 10px;
+}
