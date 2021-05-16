@@ -120,4 +120,22 @@ button.active {
     vertical-align: middle;
 }
 
+.calculoPreço {
+    border: 1px solid #d65a31;
+    border-radius: 8px;
+    background-color: #222831;
+    padding: 10px;
+    min-width: 100px;
+    text-align: center;
+}
+.butaoCalculo {
+    border: 1px solid #d65a31;
+    border-radius: 8px;
+    background-color: #222831;
+    padding: 10px;
+    min-width: 100px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
 

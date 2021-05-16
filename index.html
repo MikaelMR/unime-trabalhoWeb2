@@ -67,86 +67,92 @@
     <div class="conteudoTamanho conteudo">
         <button class="butaoMedio butaoJS" onclick="mostrarConteudo(event, 'conteudoMedio')">Média (2 Sabores)</button>
         <button class="butaoGrande butaoJS" onclick="mostrarConteudo(event, 'conteudoGrande')">Grande (3 Sabores)</button><br><br><br>
-          
+
         <div id="conteudoMedio" class="conteudoSele">
             <p class="selectSabor">1º Sabor: </p>
-            <select name="1osab" class="selectSabor">
-                <option value="1">Alho e Óleo (R$ 9,60)</option>
-                <option value="2">Bacon (R$ 10,82)</option>
-                <option value="3">Baiana (R$ 10,77)</option>
-                <option value="4">Calabresa (R$ 11,40)</option>
-                <option value="5">Camarão (R$ 15,75)</option>
-                <option value="6">Frango com Catupiry (R$ 11,72)</option>
-                <option value="7">Maguerita (R$ 10,85)</option>
-                <option value="8">Milho verde (R$ 10,05)</option>
-                <option value="9">Mussarela (R$ 7,50)</option>
-                <option value="10">Peperoni (R$ 11,12)</option>
-                <option value="11">Portuguesa (R$ 11,97)</option>
-                <option value="12">Quatro queijos (R$ 11,80)</option>
+            <select name="1osab" class="selectSabor" id="medioSabor1">
+                <option value="19.20">Alho e Óleo (R$ 9,60)</option>
+                <option value="21.65">Bacon (R$ 10,82)</option>
+                <option value="21.55">Baiana (R$ 10,77)</option>
+                <option value="22.80">Calabresa (R$ 11,40)</option>
+                <option value="31.50">Camarão (R$ 15,75)</option>
+                <option value="23.45">Frango com Catupiry (R$ 11,72)</option>
+                <option value="21.70">Maguerita (R$ 10,85)</option>
+                <option value="20.10">Milho verde (R$ 10,05)</option>
+                <option value="15.00">Mussarela (R$ 7,50)</option>
+                <option value="22.25">Peperoni (R$ 11,12)</option>
+                <option value="23.95">Portuguesa (R$ 11,97)</option>
+                <option value="23.60">Quatro queijos (R$ 11,80)</option>
             </select><br><br>
             <p class="selectSabor">2º Sabor: </p>
-            <select name="2osab" class="selectSabor">
-                <option value="1">Alho e Óleo (R$ 9,60)</option>
-                <option value="2">Bacon (R$ 10,82)</option>
-                <option value="3">Baiana (R$ 10,77)</option>
-                <option value="4">Calabresa (R$ 11,40)</option>
-                <option value="5">Camarão (R$ 15,75)</option>
-                <option value="6">Frango com Catupiry (R$ 11,72)</option>
-                <option value="7">Maguerita (R$ 10,85)</option>
-                <option value="8">Milho verde (R$ 10,05)</option>
-                <option value="9">Mussarela (R$ 7,50)</option>
-                <option value="10">Peperoni (R$ 11,12)</option>
-                <option value="11">Portuguesa (R$ 11,97)</option>
-                <option value="12">Quatro queijos (R$ 11,80)</option>
-            </select>
+            <select name="2osab" class="selectSabor" id="medioSabor2">
+                <option value="19.20">Alho e Óleo (R$ 9,60)</option>
+                <option value="21.65">Bacon (R$ 10,82)</option>
+                <option value="21.55">Baiana (R$ 10,77)</option>
+                <option value="22.80">Calabresa (R$ 11,40)</option>
+                <option value="31.50">Camarão (R$ 15,75)</option>
+                <option value="23.45">Frango com Catupiry (R$ 11,72)</option>
+                <option value="21.70">Maguerita (R$ 10,85)</option>
+                <option value="20.10">Milho verde (R$ 10,05)</option>
+                <option value="15.00">Mussarela (R$ 7,50)</option>
+                <option value="22.25">Peperoni (R$ 11,12)</option>
+                <option value="23.95">Portuguesa (R$ 11,97)</option>
+                <option value="23.60">Quatro queijos (R$ 11,80)</option>
+            </select><br><br>
+            <button type="button" onclick="medioSabor()" class="butaoCalculo">Calcule o valor total</button>
         </div>
-
+        
         <div id="conteudoGrande" class="conteudoSele">
             <p class="selectSabor">1º Sabor: </p>
-            <select name="1osab" class="selectSabor">
-                <option value="1">Alho e Óleo (R$ 9,60)</option>
-                <option value="2">Bacon (R$ 10,82)</option>
-                <option value="3">Baiana (R$ 10,77)</option>
-                <option value="4">Calabresa (R$ 11,40)</option>
-                <option value="5">Camarão (R$ 15,75)</option>
-                <option value="6">Frango com Catupiry (R$ 11,72)</option>
-                <option value="7">Maguerita (R$ 10,85)</option>
-                <option value="8">Milho verde (R$ 10,05)</option>
-                <option value="9">Mussarela (R$ 7,50)</option>
-                <option value="10">Peperoni (R$ 11,12)</option>
-                <option value="11">Portuguesa (R$ 11,97)</option>
-                <option value="12">Quatro queijos (R$ 11,80)</option>
+            <select name="1osab" class="selectSabor" id="grandeSabor1">
+                <option value="19.20">Alho e Óleo (R$ 6,40)</option>
+                <option value="21.65">Bacon (R$ 7,21)</option>
+                <option value="21.55">Baiana (R$ 7,18)</option>
+                <option value="22.80">Calabresa (R$ 7,60)</option>
+                <option value="31.50">Camarão (R$ 10,50)</option>
+                <option value="23.45">Frango com Catupiry (R$ 7,81)</option>
+                <option value="21.70">Maguerita (R$ 7,23)</option>
+                <option value="20.10">Milho verde (R$ 6,70)</option>
+                <option value="15.00">Mussarela (R$ 5,00)</option>
+                <option value="22.25">Peperoni (R$ 7,41)</option>
+                <option value="23.95">Portuguesa (R$ 7,98)</option>
+                <option value="23.60">Quatro queijos (R$ 7,96)</option>
             </select><br><br>
             <p class="selectSabor">2º Sabor: </p>
-            <select name="2osab" class="selectSabor">
-                <option value="1">Alho e Óleo (R$ 9,60)</option>
-                <option value="2">Bacon (R$ 10,82)</option>
-                <option value="3">Baiana (R$ 10,77)</option>
-                <option value="4">Calabresa (R$ 11,40)</option>
-                <option value="5">Camarão (R$ 15,75)</option>
-                <option value="6">Frango com Catupiry (R$ 11,72)</option>
-                <option value="7">Maguerita (R$ 10,85)</option>
-                <option value="8">Milho verde (R$ 10,05)</option>
-                <option value="9">Mussarela (R$ 7,50)</option>
-                <option value="10">Peperoni (R$ 11,12)</option>
-                <option value="11">Portuguesa (R$ 11,97)</option>
-                <option value="12">Quatro queijos (R$ 11,80)</option>
+            <select name="2osab" class="selectSabor" id="grandeSabor2">
+                <option value="19.20">Alho e Óleo (R$ 6,40)</option>
+                <option value="21.65">Bacon (R$ 7,21)</option>
+                <option value="21.55">Baiana (R$ 7,18)</option>
+                <option value="22.80">Calabresa (R$ 7,60)</option>
+                <option value="31.50">Camarão (R$ 10,50)</option>
+                <option value="23.45">Frango com Catupiry (R$ 7,81)</option>
+                <option value="21.70">Maguerita (R$ 7,23)</option>
+                <option value="20.10">Milho verde (R$ 6,70)</option>
+                <option value="15.00">Mussarela (R$ 5,00)</option>
+                <option value="22.25">Peperoni (R$ 7,41)</option>
+                <option value="23.95">Portuguesa (R$ 7,98)</option>
+                <option value="23.60">Quatro queijos (R$ 7,96)</option>
             </select><br><br>
             <p class="selectSabor">3º Sabor: </p>
-            <select name="3osab" class="selectSabor">
-                <option value="1">Alho e Óleo (R$ 9,60)</option>
-                <option value="2">Bacon (R$ 10,82)</option>
-                <option value="3">Baiana (R$ 10,77)</option>
-                <option value="4">Calabresa (R$ 11,40)</option>
-                <option value="5">Camarão (R$ 15,75)</option>
-                <option value="6">Frango com Catupiry (R$ 11,72)</option>
-                <option value="7">Maguerita (R$ 10,85)</option>
-                <option value="8">Milho verde (R$ 10,05)</option>
-                <option value="9">Mussarela (R$ 7,50)</option>
-                <option value="10">Peperoni (R$ 11,12)</option>
-                <option value="11">Portuguesa (R$ 11,97)</option>
-                <option value="12">Quatro queijos (R$ 11,80)</option>
-            </select>
+            <select name="3osab" class="selectSabor" id="grandeSabor3">
+                <option value="19.20">Alho e Óleo (R$ 6,40)</option>
+                <option value="21.65">Bacon (R$ 7,21)</option>
+                <option value="21.55">Baiana (R$ 7,18)</option>
+                <option value="22.80">Calabresa (R$ 7,60)</option>
+                <option value="31.50">Camarão (R$ 10,50)</option>
+                <option value="23.45">Frango com Catupiry (R$ 7,81)</option>
+                <option value="21.70">Maguerita (R$ 7,23)</option>
+                <option value="20.10">Milho verde (R$ 6,70)</option>
+                <option value="15.00">Mussarela (R$ 5,00)</option>
+                <option value="22.25">Peperoni (R$ 7,41)</option>
+                <option value="23.95">Portuguesa (R$ 7,98)</option>
+                <option value="23.60">Quatro queijos (R$ 7,96)</option>
+            </select><br><br>
+            <button type="button" onclick="grandeSabor()" class="butaoCalculo">Calcule o valor total</button>
+        </div><br><br><br>
+
+        <div class="calculoPreço">
+            <p id="calculo" class="conteudoPreço">Preço Final = </p>
         </div>
     </div>
 
@@ -163,6 +169,28 @@
           }
           document.getElementById(ordemSabor).style.display = "block";
           evt.currentTarget.className += " active";
+        }
+
+        function medioSabor() {
+            var medioSabor1 = parseFloat(document.getElementById("medioSabor1").value) / 2;
+            var medioSabor2 = parseFloat(document.getElementById("medioSabor2").value) / 2;
+            var custoTotal = (medioSabor1 + medioSabor2).toFixed(2);
+            
+            custoTotal = custoTotal.replaceAll('.',',');
+            document.getElementById("calculo").innerHTML = 'Preço Final = R$ ' + custoTotal;
+        }
+
+        function grandeSabor() {
+            var grandeSabor1 = parseFloat(document.getElementById("grandeSabor1").value) / 3;
+            var grandeSabor2 = parseFloat(document.getElementById("grandeSabor2").value) / 3;
+            var grandeSabor3 = parseFloat(document.getElementById("grandeSabor3").value) / 3;
+            var custoTotal = (grandeSabor1 + grandeSabor2 + grandeSabor3).toFixed(2);
+            
+            custoTotal = custoTotal.replaceAll('.',',');
+            document.getElementById("calculo").innerHTML = 'Preço Final = R$ ' + custoTotal;
+            console.log(grandeSabor1);
+            console.log(grandeSabor2);
+            console.log(grandeSabor3);
         }
     </script>
     
