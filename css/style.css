@@ -19,6 +19,7 @@
     display: inline-block;
     vertical-align: middle;
     font-size: 2em;
+    font-weight: b;
     padding: 10px;
     color: black;
 }
@@ -37,20 +38,13 @@
     display: inline-block;
     vertical-align: top;
 }
-.sabores {
-    border: 1px solid #d65a31;
-    border-radius: 8px;
-    background-color: #393e46;
-    font-size: 1.5em;
-    padding: 10px;
-}
 .scrollsab {
     border: 1px solid #d65a31;
     border-radius: 8px;
     background-color: #393e46;
     padding: 50px;
-    height: 364px;
-    width: 350px;
+    height: 598px;
+    width: 280px;
     overflow: auto;
 }
 #pimg {
@@ -69,4 +63,51 @@
     margin-right: auto;
     width: 60%;
     padding: 10px;
+}
+
+.sabores {
+    border: 1px solid #d65a31;
+    border-radius: 8px;
+    background-color: #393e46;
+    font-size: 1.5em;
+    padding: 10px;
+}
+th, td {
+    padding: 10px;
+}
+
+.tamprecal {
+    border: 1px solid #d65a31;
+    border-radius: 8px;
+    background-color: #393e46;
+    padding: 10px;
+    height: 678px;
+    width: 488px;
+}
+.ptmedio {
+    border: 1px solid #d65a31;
+    border-radius: 8px;
+    background-color: #222831;
+    padding: 10px;
+    min-width: 100px;
+    margin-left: 40px;
+}
+.ptgrande {
+    border: 1px solid #d65a31;
+    border-radius: 8px;
+    background-color: #222831;
+    padding: 10px;
+    min-width: 100px;
+}
+.ptmediosab {
+    border: 1px solid #d65a31;
+    border-radius: 8px;
+    background-color: #222831;
+    padding: 10px;
+    min-width: 100px;
+    text-align: center;
+}
+.ptmselect {
+    display: inline-block;
+    vertical-align: middle;
 }
