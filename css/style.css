@@ -76,7 +76,7 @@ th, td {
     padding: 10px;
 }
 
-.tamprecal {
+.conteudoTamanho {
     border: 1px solid #d65a31;
     border-radius: 8px;
     background-color: #393e46;
@@ -84,30 +84,40 @@ th, td {
     height: 678px;
     width: 488px;
 }
-.ptmedio {
-    border: 1px solid #d65a31;
-    border-radius: 8px;
-    background-color: #222831;
-    padding: 10px;
-    min-width: 100px;
-    margin-left: 40px;
+button:hover,
+button.active {
+    background-color: #d65a31;
 }
-.ptgrande {
+.butaoMedio {
     border: 1px solid #d65a31;
     border-radius: 8px;
     background-color: #222831;
     padding: 10px;
     min-width: 100px;
+    margin-left: 19%;
+    cursor: pointer;
+    transition: 0.5s;
 }
-.ptmediosab {
+.butaoGrande {
     border: 1px solid #d65a31;
     border-radius: 8px;
     background-color: #222831;
     padding: 10px;
     min-width: 100px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.conteudoSele {
+    display: none;
+    border: 1px solid #d65a31;
+    border-radius: 8px;
+    background-color: #222831;
     text-align: center;
+    padding: 10px;
 }
-.ptmselect {
+.selectSabor {
     display: inline-block;
     vertical-align: middle;
 }
+
+
