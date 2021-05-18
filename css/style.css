@@ -21,11 +21,16 @@
     font-size: 2em;
     font-weight: b;
     padding: 10px;
-    color: black;
+}
+#tituloPizza {
+    color: slateblue;
+}
+#tituloDoDev {
+    color: khaki;
 }
 .logo {
-    width: 103px;
-    height: 103px;
+    width: 159px;
+    height: 126px;
     padding-left: 80px;
 }
 #mtit {
@@ -37,6 +42,13 @@
 .conteudo {
     display: inline-block;
     vertical-align: top;
+}
+.conteudoInstrucao {
+    border: 1px solid #d65a31;
+    border-radius: 8px;
+    background-color: #222831;
+    padding: 10px;
+    padding-left: 30px;
 }
 .scrollsab {
     border: 1px solid #d65a31;
@@ -136,6 +148,23 @@ button.active {
     min-width: 100px;
     cursor: pointer;
     transition: 0.5s;
+}
+
+#rodape {
+    background-color: #222831;
+    border: 1px solid #d65a31;
+    padding: 10px;
+}
+.rodapeContato {
+    border: 1px solid #d65a31;
+    border-radius: 8px;
+    background-color: #222831;
+    padding: 10px;
+    width: 350px;
+}
+.nomeAluno {
+    text-align: center;
+    font-weight: bold;
 }
 
 
